@@ -1,13 +1,17 @@
-program project1;
+program oli;
+
+type
+  tROli = record
+    a, b : integer;
+  end;
 
 var
-   a : integer;
+   a : tROli;
 
 begin
-  for a :=1 to 10 do
-  begin
-    writeln(a);
-  end;
+  a.a := 1;
+  a.b := 2;
+  writeln(a.a, ', ', a.b);
   readln;
 end.
 
